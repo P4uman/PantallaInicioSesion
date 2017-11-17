@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="rootPane" prefHeight="720.0" prefWidth="1280.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="720.0" fitWidth="1280.0" />
+      <Pane layoutX="348.0" layoutY="164.0" prefHeight="380.0" prefWidth="600.0" style="-fx-background-color: #EAEAEA55; -fx-background-radius: 10;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="272.0" layoutY="71.0" text="Log in">
+               <font>
+                  <Font name="Raanana Bold" size="28.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#ff303b00" layoutX="200.0" layoutY="157.0" prefHeight="27.0" prefWidth="225.0" promptText="Username" style="-fx-border-color: #FFFFFF; -fx-border-radius: 5px; -fx-background-color: #FFFFFF88;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="10.0" />
+               </padding></JFXTextField>
+            <JFXTextField focusColor="#ff303b00" layoutX="199.0" layoutY="216.0" prefHeight="27.0" prefWidth="225.0" promptText="Password" style="-fx-background-color: #FFFFFF88; -fx-border-color: #FFFFFF; -fx-border-radius: 5;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets left="10.0" />
+               </padding></JFXTextField>
+            <JFXButton layoutX="226.0" layoutY="296.0" prefWidth="180.0" style="-fx-background-color: c6252b; -fx-background-radius: 5;" text="Log in" textFill="#eaeaea" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
